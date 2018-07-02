@@ -1,0 +1,42 @@
+<!-- 搜索区域 -->
+<view class='search_area'>
+  <icon type="search" size="15" color="#c7c7c7"/>
+  <input type='text' placeholder='搜索文章关键字，标题' auto-focus value='{{search}}' bindinput = 'bindKeyInput' bindconfirm = 'bindconfirmInput'/>
+</view>
+
+<block wx:if="{{!searching}}">
+  <!--搜索条件区域-->
+  <view  wx:if="{{search == ''}}" class='search_cotent'>
+    <!--历史记录-->
+    <block wx:if="{{historySearches.length > 0}}">
+      <text class='title'>历史记录</text>
+      <view class='history'>
+        <view wx:for="{{historySearches}}" wx:key="*this" wx:for-item="item" class='search_link' bindtap="search" data-text="{{item}}">
+        {{item}}
+      </view>
+      </view>
+    </block>
+    <!--热门搜索-->
+    <text class='title'>热门搜索</text>
+    <view class='hot'>
+      <view wx:for="{{hotSearches}}" wx:key="*this" wx:for-item="item" class='search_link' bindtap="search" data-text="{{item}}">
+        {{item}}
+      </view>
+    </view>
+  </view>
+
+  <view wx:else class='search_container'>
+    <view class='article_list'>
+      <view wx:for="{{article}}" wx:for-item="item" wx:key="id" class='article_section' bindtap="showArticle" data-text="{{item.id}}">
+        <article imageSrc='{{item.user_picture_url}}' name='{{item.user_nickname}}' time='{{item.published_at}}' title='{{item.title}}' content='{{item.simple_content}}'>
+        </article>
+      </view>
+    </view>
+  </view>
+</block>
+
+<block wx:else>
+  <view class='searching_area'>
+    查找{{search}}中。。。
+  </view>
+</block>

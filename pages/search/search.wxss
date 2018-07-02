@@ -1,0 +1,77 @@
+/*搜索区域*/
+.search_area{
+  background-color: #f5514d;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_area > icon{
+  position: relative;
+  left: 50rpx;
+  top: 3rpx;
+  z-index: 2;
+}
+
+.search_area > input {
+  height: 50rpx;
+  line-height: 50rpx;
+  background-color: #fff; 
+  border-radius: 50rpx;
+  width: 80%;
+  box-sizing: border-box;
+  font-size: 20rpx;
+  padding-left: 60rpx;
+}
+
+/*搜索展示区域*/
+
+/*未输入搜索内容*/
+.search_cotent{
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.search_cotent > text.title {
+  color: #323232;
+  font-size: 24rpx;
+}
+
+.search_cotent > .hot,.search_cotent > .history {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20rpx;
+}
+
+.search_cotent .search_link {
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #323232;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+  border: 1px solid #e2e2e2;
+  margin-right: 20rpx;
+  border-radius: 5px;
+  margin-bottom: 20rpx;
+}
+
+/*搜索中*/
+.searching_area{
+  background-color: #fff;
+  padding: 20rpx;
+  line-height: 40rpx;
+  border-bottom: 1px solid #e2e2e2;
+  color: #323232;
+  font-size: 24rpx;
+}
+
+/*已经有了搜索*/
+.search_container{
+  min-height:100%;
+  padding: 25rpx;
+  box-sizing:border-box;
+  background-color:#fafafa; 
+}

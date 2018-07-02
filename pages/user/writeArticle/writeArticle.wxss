@@ -1,0 +1,40 @@
+/*写新文章*/
+.write_article{
+  min-height: 100%;
+  background-color: #fafafa;
+  padding: 20rpx;
+}
+
+.write_article .section__title{
+  margin-bottom: 20rpx;
+}
+
+.write_article .section{
+  margin-bottom: 20rpx;
+}
+
+.write_article .radio-group .radio{
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+ 
+
+.write_article input, .write_article textarea{
+  background-color: #ffffff;
+  padding-left: 40rpx;
+  border: 1rpx solid #e2e2e2;
+  border-radius: 10rpx;
+}
+
+.write_article input{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.write_article textarea{
+  height: 300rpx;
+  line-height: 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+}

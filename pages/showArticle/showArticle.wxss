@@ -1,0 +1,68 @@
+/* pages/showArticle/showArticle.wxss */
+.show_article{
+  background-color: #ffffff;
+  padding: 25rpx;
+  font-size: 26rpx;
+}
+
+.show_article > .title {
+  font-weight: bold;
+  color: #000;
+  font-size: 34rpx;
+}
+
+.show_article > .user_info > .user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 15rpx 0;
+}
+
+.show_article > .user_info > .user image {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+
+.show_article > .user_info > .user text.name{
+  color: #337ab7;
+}
+
+.show_article > .user_info > .article_info text{
+  margin-right: 10rpx;
+}
+
+/*内容展示*/
+.wxParse-h3{
+  font-weight: bold;
+  color: #000;
+  font-size: 28rpx; 
+}
+.wxParse-p{
+  line-height: 40rpx;
+}
+
+.wxParse-wxxxcode-style{
+  display: block;
+  padding: 10rpx;
+  font-size: 26rpx;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #f5f5f5;
+  border: 2rpx solid #ccc;
+  border-radius: 5rpx;
+  margin: 5rpx 0;
+}
+
+.WxEmojiView.wxParse-inline{
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+  word-break: break-all;
+}

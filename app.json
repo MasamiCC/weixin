@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/others/others",
+    "pages/admin/admin",
+    "pages/search/search",
+    "pages/showArticle/showArticle",
+    "pages/user/user_index/user_index",
+    "pages/user/login/login",
+    "pages/user/signUp/signUp",
+    "pages/user/writeArticle/writeArticle"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "一个小小的博客",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar":{
+    "color": "#c7c7c7",
+    "selectedColor": "#4fe3c1",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/imgs/tabBar/index_show.png",
+        "selectedIconPath" :"/imgs/tabBar/index.png"
+      },
+      {
+        "pagePath": "pages/user/user_index/user_index",
+        "text": "个人中心",
+        "iconPath": "/imgs/tabBar/user_show.png",
+        "selectedIconPath": "/imgs/tabBar/user.png"
+      },
+      {
+        "pagePath": "pages/others/others",
+        "text": "另外的好东西",
+        "iconPath": "/imgs/tabBar/more_show.png",
+        "selectedIconPath": "/imgs/tabBar/more.png"
+      }
+    ]
+  }
+}

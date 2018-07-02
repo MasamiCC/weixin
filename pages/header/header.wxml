@@ -1,0 +1,12 @@
+<!--头部-->
+<view class='narbar_top'>
+  <!-- logo -->
+  <image src='/imgs/tabBar/logo.png' class='logo_img'></image>
+  <!-- userInfo -->
+  <navigator  wx:if="{{!isLogin}}" url="../user/login/login" hover-class="navigator-hover">
+    <text class='info'>尚未登录</text>
+  </navigator>
+  <navigator  wx:else open-type="switchTab" url="../user/user_index/user_index" hover-class="navigator-hover">
+    <image class="userinfo-avatar" src="{{imageSrc}}" mode="cover"></image>
+  </navigator>
+</view>

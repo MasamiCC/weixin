@@ -1,0 +1,27 @@
+
+@import "/pages/wxParse/wxParse.wxss";
+/**app.wxss**/
+page{
+  height: 100%;
+  font-size: 26rpx;
+}
+
+.container {
+  min-height: 100%;
+  padding: 100rpx 10rpx 25rpx;
+  box-sizing: border-box;
+  background-color: #fafafa;
+} 
+
+
+/*文章列表*/
+.article_list {
+  display: flex;
+  flex-direction: column; 
+}
+
+.article_list > .article_section {
+  background-color: #fff;
+  padding: 15rpx;
+  margin-top: 30rpx;
+}

@@ -1,0 +1,34 @@
+/*头部模板*/
+.narbar_top {
+  width: 100%;
+  height: 80rpx;
+  padding: 5rpx 50rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  display: flex; /*采用flex布局*/
+  flex-direction: row;  /*排列方式 */
+  justify-content: space-between; /*收尾对应*/
+  align-items: center; /*垂直居中*/
+  box-sizing: border-box;
+}
+
+.narbar_top .logo_img {
+  height: 100%;
+  width: 180rpx;
+}
+
+.narbar_top .info {
+  font-size: 26rpx;
+}
+
+.narbar_top .userinfo-avatar {
+  width: 65rpx;
+  height: 65rpx;
+  margin: 0rpx;
+  border-radius:50%;
+}

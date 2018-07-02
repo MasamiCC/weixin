@@ -1,0 +1,31 @@
+<!--登录提示区域-->
+<view wx:if="{{!hasUserInfo}}" class='login_area' bindtap="login">
+  <view class='info'>
+    <text class='big'>登录/注册</text>
+    <text>登陆后可享受更多特权</text>
+  </view>
+  <view class='arrow'>
+    >
+  </view>
+</view>
+
+<!--已登录区域-->
+<view wx:else class='login_area'>
+  <view class='user_info'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+</view>
+
+<!--个人中心功能-->
+<view class='user'>
+ <view class='item'>
+   我的文章
+ </view>
+ <view class='item' bindtap="writeArticle">
+   写新文章
+ </view>
+ <view class='item'>
+   我的虚拟币
+ </view>
+</view>

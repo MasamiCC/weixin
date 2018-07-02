@@ -1,0 +1,18 @@
+<view class='sign_up_area'>
+
+  <view class="section" wx:if= "{{step == 1}}" >
+    <input name="num" placeholder="请输入您的手机号" bindinput ="userPhoneNumInput" value="{{phoneNum}}"/>
+    <button type="primary" size="default" loading="{{loading}}" plain="{{plain}}" bindtap="next_1">下一步</button>
+  </view>
+
+  <view class="section" wx:if= "{{step == 2}}" wx:if= "{{step == 2}}">
+    <input name="num" placeholder="请输入您的短信验证码" />
+    <button type="primary" size="default" loading="{{loading}}" plain="{{plain}}">下一步</button>
+  </view>
+
+  <view class="section" wx:if= "{{step == 3}}">
+    <input name="password1" placeholder="请输入您的密码" />
+    <input name="password2" placeholder="请重复您的密码" />
+    <button type="primary" size="default" loading="{{loading}}" plain="{{plain}}">完成</button>
+  </view>
+</view>

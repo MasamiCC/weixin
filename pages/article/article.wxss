@@ -1,0 +1,63 @@
+/*列表展示区域*/
+.article_section {
+  background-color: #fff;
+  overflow: hidden;
+  padding: 15rpx;
+  margin-top: 30rpx;
+  min-height: 200rpx;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.author > image{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+}
+
+.author > image,.author > text {
+  margin-right: 20rpx;
+  font-size: 24rpx;
+}
+
+.author > text.name {
+  color: #337ab7;
+}
+
+.author > text.time {
+  font-size: 22rpx;
+  color: #c7c7c7;
+}
+
+.article_content > text.title {
+  color: #000;
+  font-weight: bold;
+  font-size: 30rpx;
+  display: block;
+  line-height: 35rpx;
+  margin-bottom: 10rpx;
+}
+
+.article_content > text.content {
+  font-size: 26rpx;
+  overflow: hidden;
+  display: -webkit-box; 
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.article_content .comment {
+  font-size: 26rpx;
+  color: #969696;
+}
+
+.article_content .comment > text {
+  margin-right: 15rpx;
+}

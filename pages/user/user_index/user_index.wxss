@@ -1,0 +1,58 @@
+/* pages/user/user.wxss */
+
+/*未登录提示*/
+.login_area{
+  padding: 40rpx 25rpx 25rpx;
+  background-color: #f8a6a4;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login_area .info > text{
+  display: block;
+}
+
+.login_area .info > text.big{
+  font-size: 36rpx;
+}
+
+.login_area .arrow {
+  font-size: 36rpx;
+}
+
+/*已登录提示*/
+.login_area > .user_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.login_area .userinfo-avatar{
+  width: 65rpx;
+  height: 65rpx;
+  margin: 0rpx;
+  border-radius:50%;
+  margin-right: 20rpx;
+}
+
+/*个人中心功能*/
+.user{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.user > .item{
+  padding: 50rpx 0;
+  text-align: center;
+  flex-grow: 3;
+}
+
+.user > .item:nth-child(2) {
+  border: 1px solid #e2e2e2;
+  border-top: none;
+  border-bottom: none;
+}

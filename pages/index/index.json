@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header": "/pages/header/header",
+    "article": "/pages/article/article"
+  },
+   "enablePullDownRefresh": true  
+}

@@ -1,0 +1,24 @@
+/*登录区域*/
+.login_area{
+  background-color: #fafafa; 
+  min-height: 100%;
+  padding: 20rpx;
+}
+.login_form input{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #ffffff;
+  padding-left: 40rpx;
+  border: 1rpx solid #e2e2e2;
+  border-radius: 20rpx;
+  margin-bottom: 40rpx;
+}
+.sign_up{
+  text-align: right;
+  margin-top: 20rpx;
+  color: #1c69dc;
+}
+
+.login_btn {
+  margin-top: 40rpx;
+}

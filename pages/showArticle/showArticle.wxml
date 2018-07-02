@@ -1,0 +1,24 @@
+<!--pages/showArticle/showArticle.wxml-->
+<!--文章展示区-->
+<view class='show_article'>
+  <!--标题-->
+  <view class='title'>{{blog.title}}</view>
+  <!--文章用户信息-->
+  <view class='user_info'>
+    <view class='user'>
+      <image src="{{blog.user_picture_url}}"></image>
+      <text class='name'>{{blog.user_nickname}}</text>
+    </view>
+    <view class='article_info'>
+      <text class='time'>{{blog.published_at}}</text>
+      <text class='word_num'>字数444</text>
+      <text>阅读{{blog.views_count}}</text>
+      <text>评论10</text>
+      <text>喜欢2</text>
+    </view>
+  </view>
+  <view class='content'>
+     <import src="../wxParse/wxParse.wxml"/>
+     <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+</view>

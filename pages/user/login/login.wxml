@@ -1,0 +1,22 @@
+<!--pages/user/login/login.wxml-->
+<view class='login_area'>
+  <form bindsubmit="formSubmit" bindreset="formReset" class='login_form'>
+    <view class="section">
+      <input name="input" placeholder="请输入您的登录邮箱" />
+    </view>
+
+    <view class="section">
+      <input name="input" placeholder="请输入您的密码" />
+    </view>
+
+    <view class="btn-area">
+      <button formType="submit" type="primary" size="default" loading="{{loading}}" plain="{{plain}}">登录</button>
+    </view>
+  </form>
+  <view>
+    <button type="primary" size="default" loading="{{loading}}" plain="{{plain}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='login_btn'>使用微信号登陆</button>
+    <navigator url="../signUp/signUp" hover-class="navigator-hover" class='sign_up'>
+      没有账号，注册
+    </navigator>
+  </view>
+</view>

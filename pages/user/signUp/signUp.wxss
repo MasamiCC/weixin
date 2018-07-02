@@ -1,0 +1,15 @@
+/*注册区域*/
+.sign_up_area{
+  background-color: #fafafa; 
+  min-height: 100%;
+  padding: 20rpx;
+}
+.sign_up_area input{
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #ffffff;
+  padding-left: 40rpx;
+  border: 1rpx solid #e2e2e2;
+  border-radius: 20rpx;
+  margin-bottom: 40rpx;
+}

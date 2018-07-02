@@ -1,0 +1,93 @@
+<!-- 引人头部 -->
+<header imageSrc="{{userInfo.avatarUrl}}" isLogin="{{hasUserInfo}}"></header>
+<!-- 主体 -->
+<view class='container home_container'>
+  <!-- 切换点击区域 -->
+  <scroll-view scroll-x="true" scroll-left="{{scrollLeft}}" class='swith_tab'>
+    <view bindtap="swichNav" data-current="0" class="tab-item {{currentTab==0?'active':''}}">
+      全部  
+    </view>
+    <view bindtap="swichNav" data-current="1" class="tab-item {{currentTab==1?'active':''}}">
+      热门
+    </view>
+  </scroll-view>
+
+  <!-- 切换内容区域 -->
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item>
+    <!-- 搜索区域 -->
+    <form class='search_form' bindtap="linkSearch">
+      <view class="section">
+        <icon type="search" size="20"/>
+        <text>search...</text>
+      </view>
+    </form>
+    <!-- 文章展示区域 -->
+    <view class='article_list'>
+      <view 
+      wx:for="{{article}}" 
+      wx:for-item="item" 
+      wx:key="id" 
+      class='article_section' 
+      bindtap="showArticle" 
+      data-text="{{item.id}}">
+        <article 
+        imageSrc='{{item.user_picture_url}}' 
+        name='{{item.user_nickname}}'
+        time='{{item.published_at}}' 
+        title='{{item.title}}' 
+        content='{{item.simple_content}}' 
+        reading='{{item.views_count}}' 
+        comment='0' 
+        like='0'>
+        </article>
+      </view>
+    </view>    
+    </swiper-item>
+    <swiper-item>
+      <!-- 热门文章展示区域 -->
+      <view class='article_list'>
+       <view>最热门</view>
+        <view 
+        wx:for="{{hotArticle.rank_list_all}}" 
+        wx:for-item="item" 
+        wx:key="id" 
+        class='article_section' 
+        bindtap="showArticle" 
+        data-text="{{item.id}}">
+          <article 
+          imageSrc='https://admin.anyfuns.cn{{item.user_picture_url}}' 
+          name='{{item.user_nickname}}'
+          time='{{item.published_at}}' 
+          title='{{item.title}}' 
+          content='{{item.simple_content}}' 
+          reading='{{item.views_count}}' 
+          comment='0' 
+          like='0'>
+          </article>
+        </view>
+
+        <view>本月最热</view>
+        <view 
+        wx:for="{{hotArticle.rank_list_all}}" 
+        wx:for-item="item" 
+        wx:key="id" 
+        class='article_section' 
+        bindtap="showArticle" 
+        data-text="{{item.id}}">
+          <article 
+          imageSrc='https://admin.anyfuns.cn{{item.user_picture_url}}' 
+          name='{{item.user_nickname}}'
+          time='{{item.published_at}}' 
+          title='{{item.title}}' 
+          content='{{item.simple_content}}' 
+          reading='{{item.views_count}}' 
+          comment='0' 
+          like='0'>
+          </article>
+        </view>
+      </view> 
+    </swiper-item>
+  </swiper>
+</view>
+

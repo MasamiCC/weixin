@@ -1,0 +1,16 @@
+ <!-- 文章信息 -->
+<view class='author'>
+  <image src="{{imageSrc}}"></image>
+  <text class='name'>{{name}}</text>
+  <text class='time'>{{time}}</text>
+</view>
+<!-- 文章内容 -->
+<view class='article_content'>
+  <text class='title'>{{title}}</text>
+  <text class='content'>{{content}}</text>
+  <view class='comment'>
+    <text>阅读{{reading}}</text>
+    <text>评论{{comment}}</text>
+    <text>喜欢{{like}}</text>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<view class='write_article'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <view class="section__title">文章标题</view>
+      <input name="title" placeholder="请填写标题" />
+    </view>
+    <view class="section">
+      <view class="section__title">文章类型</view>
+      <radio-group class="radio-group" bindchange="radioChange" bindchange="checkboxChange">
+        <label class="radio" wx:for="{{items}}" wx:key="*this">
+          <radio value="{{item[1]}}" checked="{{item[2]}}"/>{{item[0]}}
+        </label>
+      </radio-group>
+    </view>
+    <view class="section">
+      <view class="section__title">是否直接发布</view>
+      <switch checked name="publish"/>
+    </view>
+    <view class="section">
+      <view class="section__title">置顶</view>
+      <switch checked name="top"/>
+    </view>
+    <view class="section">
+      <view class="section__title">文章内容</view>
+      <textarea placeholder="文章内容" name="content"/>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" type="primary" size="default" loading="{{loading}}" plain="{{plain}}">提交</button>
+    </view>
+  </form>
+</view>
